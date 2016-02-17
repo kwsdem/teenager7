@@ -7,7 +7,7 @@
       Ο <%= activity.owner.name %>
     <% end %></h4>
     <span class="action">ακολούθησε <% if activity.trackable.followable.sex == "female" %>
-      την 
+      την <%= activity.trackable.followable.name %>
     <% else %>
       τον <%= activity.trackable.followable.name %>
     <% end %></span>

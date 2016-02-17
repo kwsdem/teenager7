@@ -3,7 +3,7 @@
     <div class="info">
       <%= render 'shared/avatar', user: activity.owner %>
       <h4 class="name"><% if activity.owner.sex == "female" %>
-        Η 
+        Η <%= activity.owner.name %>
       <% else %>
         Ο <%= activity.owner.name %>
       <% end %></h4>
