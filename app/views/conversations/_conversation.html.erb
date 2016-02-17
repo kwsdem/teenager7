@@ -4,8 +4,8 @@
       <br><%= render 'shared/avatar', user: conversation.originator %>
       <%= conversation.originator.name %><small><b> και </b></small>
         <%= conversation.recipients.first.name %>
-      <div class="pull-right">
-      <small><b>Ημερομηνία: </b><%=  conversation.messages.last.created_at.strftime("%A, %b %d, %Y στις %I:%M%p") %></small></div>
+<!--       <div class="pull-right">
+      <small><b>Ημερομηνία: </b><%=  conversation.messages.last.created_at.strftime("%A, %b %d, %Y στις %I:%M%p") %></small></div> -->
     </h4>
     <%= truncate conversation.subject %>
     <%= link_to "Άνοιγμα", conversation_path(conversation)  %>

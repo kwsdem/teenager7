@@ -32,12 +32,12 @@
 
       <div class="form-group">
         <%= f.label :"Γενέθλια" %>
-        <%= f.date_field :birthday, max: Date.today-4080, min: Date.today-6870, class: 'form-control' %>
+        <%= f.date_field :birthday, max: Date.today-4080, min: Date.today-6870, class: 'form-control', placeholder: 'π.χ. 01/02/2001'  %>
       </div>
 
       <div class="form-group">
         <%= f.label :"Φύλο*" %><br>
-        <%= f.select :sex, options_for_seasons, class: 'form-control', prompt: 'Select One' %>
+        <%= f.select :sex, options_for_seasons, class: 'form-control', prompt: 'Επέλεξε ένα' %>
       </div>
       <div class="actions">
         <%= f.submit 'Εγγραφή', class: 'btn btn-success' %>
