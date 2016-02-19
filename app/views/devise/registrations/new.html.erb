@@ -11,7 +11,7 @@
       <% end %>
       <div class="form-group">
         <%= f.label :"Ονομ/μο*" %>
-        <%= f.text_field :name, class: 'form-control', autofocus: true, placeholder: 'Ονομα/πώνυμο' %>
+        <%= f.text_field :name, class: 'form-control', autofocus: true, placeholder: 'Ονομα/μο' %>
       </div>
 
       <div class="form-group">
@@ -31,7 +31,8 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :"Γενέθλια" %>
+        <%= f.label :"Γενέθλια*" %>
+        <em>(Στο μέλλον, δεν θα μπορείτε να αλλάξετε γενέθλια!)</em>
         <%= f.date_field :birthday, max: Date.today-4080, min: Date.today-6870, class: 'form-control', placeholder: 'π.χ. 01/02/2001'  %>
       </div>
 

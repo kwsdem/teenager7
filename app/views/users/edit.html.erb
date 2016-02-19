@@ -19,8 +19,8 @@
           <%= f.file_field :cover %>
         </div>
         <div class="form-group">
-          <%= f.label :"Ονομα/πώνυμο" %>
-          <%= f.text_field :name, placeholder: 'Ονομα/πώνυμο', class: 'form-control' %>
+          <%= f.label :"Ονομα/μο" %>
+          <%= f.text_field :name, placeholder: 'Ονομα/μο', class: 'form-control' %>
         </div>
         
         <div class="form-group">
@@ -32,16 +32,11 @@
           <%= f.label :"Σχολείο" %><br>
           <%= f.select :school, noptions_for_seasons, class: 'form-control', prompt: 'Select One' %>
         </div>
-
-        <div class="form-group">
-          <%= f.label :"Γεννέθλια" %>
-          <%= f.date_field :birthday, max: Date.today-4745, min: Date.today-6870, class: 'form-control' %>
-        </div>
     
-        <div class="form-group">
+<!--         <div class="form-group">
           <%= f.label :"Φήλο" %><br>
           <%= f.select :sex, options_for_seasons, class: 'form-control' %>
-        </div>
+        </div> -->
         <div class="actions">
           <%= submit_tag 'Ενημέρωση', class: 'btn btn-primary' %>
         </div>
