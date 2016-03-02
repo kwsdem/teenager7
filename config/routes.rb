@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   resources :posts
+  resources :blog_posts
   resources :comments, only: [:create, :destroy]
   resources :votes, only: [:create, :destroy]
   
